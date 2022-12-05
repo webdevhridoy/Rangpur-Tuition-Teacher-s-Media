@@ -11,7 +11,7 @@ module.exports = {
           secondary: '#EF3D4A',
           imgBg: '#0A0F26',
           accent: "#552664",
-          textColor: "#111827",
+          texts: "#1c1c1c",
           "btn-bg": '#552664',
           neutral: "#1c1c1c",
           "base-100": "#FFFFFF",
