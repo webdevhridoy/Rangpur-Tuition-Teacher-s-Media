@@ -1,19 +1,41 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { BsArrowRight } from 'react-icons/bs';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../../assest/logo.png';
 import loginImage from '../../../assest/login.png';
+// import { authContext } from '../../../context/AuthProvider';
+import toast from 'react-hot-toast';
 
 
 
 const Login = () => {
+    // const { signIn, providerLogin } = useContext(authContext);
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const [loginError, setLoginError] = useState('');
+    // const navigate = useNavigate();
 
-    const handleLogin = () => {
-        console.log('Sei mama');
-    };
+    // const handleSignIn = (data) => {
+    //     signIn(data.email, data.password)
+    //         .then(result => {
+    //             const user = result.user;
+    //             console.log(user);
+    //             navigate('/');
+    //             toast.success('You have logged successfully');
+    //         })
+    //         .catch(err => console.error(err));
+    // };
+
+
+    // const handleGoogleSignIn = () => {
+    //     providerLogin()
+    //         .then((result) => {
+    //             const user = result.user;
+    //             console.log(user);
+    //             navigate('/');
+    //             toast.success('You have registerd successfully7');
+    //         })
+    //         .catch((err) => console.error(err));
+    // };
     return (
         <div className='flex justify-center md:flex-row flex-col items-center md:h-screen'>
             <div className='flex justify-center items-center w-full mx-auto md:w-1/2 md:p-20 p-5 md:h-screen bg-[#0A0F26]'>
@@ -39,9 +61,8 @@ const Login = () => {
                 </div>
                 <div>
                     <div className='m-10'>
-                        <form onSubmit={handleSubmit(handleLogin)}>
+                        <form>
                             <div className="form-control w-full  mt-2">
-
                                 <input type='email'
                                     {...register("email", { required: "Email Address is required" })}
                                     placeholder="Your Email" className="input input-bordered w-full my-1" />
@@ -78,9 +99,6 @@ const Login = () => {
                                 <Link className='text-base text-gray-500 hover:underline'>Lost password?</Link>
                             </div>
                         </form>
-                        <div>
-                            {loginError && <p className='text-red-600'> {loginError}</p>}
-                        </div>
                     </div>
                 </div>
             </div>

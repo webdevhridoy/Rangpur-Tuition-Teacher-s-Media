@@ -1,24 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../../assest/logo.png';
+import logo from '../../../assest/logo (6).png';
+import './Header.css';
 
 const Header = () => {
 
     const menuItems = <>
-        <li className='duration-700 hover:bg-primary'>
-            <Link className='text-md font-semibold  hover:text-white' to='/'>Home</Link>
+        <li>
+            <Link className='text-md font-semibold  ' to='/'>Home</Link>
         </li>
-        <li className='duration-700 hover:bg-primary'>
-            <Link className='text-md font-semibold  hover:text-white' to='/'>About Us</Link>
+        <li>
+            <Link className='text-md font-semibold' to='/'>About Us</Link>
         </li>
-        <li className='duration-700 hover:bg-primary'>
-            <Link className='text-md font-semibold  hover:text-white' to='/'>Find Tutors</Link>
+        <li>
+            <Link className='text-md font-semibold  ' to='/'>Find Tutors</Link>
         </li>
-        <li className='duration-700 hover:bg-primary'>
-            <Link className='text-md font-semibold  hover:text-white' to='/'>Tuitions</Link>
+        <li >
+            <Link className='text-md font-semibold  ' to='/'>Tuitions</Link>
         </li>
-        <li className='duration-700 hover:bg-primary'>
-            <Link className='text-md font-semibold  hover:text-white' to='/'>Conact Us</Link>
+        <li >
+            <Link className='text-md font-semibold  ' to='/'>Job Board</Link>
+        </li>
+        <li>
+            <Link className='text-md font-semibold  ' to='/'>Conact Us</Link>
         </li>
     </>;
     return (
@@ -37,12 +41,12 @@ const Header = () => {
                 </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal p-0">
+                <ul className="menu-horizontal p-0 menus">
                     {menuItems}
                 </ul>
             </div>
-            <div className="navbar-end">
-                <Link to='/login' className="btn md:btn-md btn-sm bg-primary">Get started</Link>
+            <div className="navbar-end ">
+                <Link to='/login' className=" rounded duration-700 ease-linear btn md:btn-md btn-sm bg-gradient-to-r from-secondary to-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary">Get started</Link>
             </div>
         </div>
     );

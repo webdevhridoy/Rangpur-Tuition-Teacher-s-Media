@@ -22,7 +22,7 @@ const Banner = () => {
         <div className='flex md:flex-row flex-col-reverse justify-evenly items-center w-11/12 mx-auto p-5 md:p-10'>
             <div className='text-start md:w-1/2'>
                 <h2 className='text-3xl text-center md:text-start md:text-5xl font-bold text-gray-800 mb-7'>A good <span className='text-secondary'>#education</span> is always a base of</h2>
-                <p className='text-3xl text-center md:text-start md:text-5xl font-bold bg-primary text-white rounded-md px-2 py-1 md:inline-block '>
+                <p className='text-3xl text-center md:text-start md:text-5xl font-bold bg-gradient-to-r from-primary to-secondary text-white rounded-md px-2 py-1 md:inline-block '>
                     <Typewriter
                         options={{
                             strings: ['Equitable societies', 'Self confidence', 'A bright future'],
@@ -35,10 +35,10 @@ const Banner = () => {
                 <p className='mt-7 text-gray-500 text-center md:text-start text-lg md:pr-10'>Students can find available online tutors/instructors and unlock any tutor profile to get online tutuion.</p>
                 <div className="flex justify-center md:justify-start items-center mb-10 sm:mb-20 mt-7">
                     <Link to='/signup'>
-                        <button className="hover:text-white hover:bg-primary lg:text-xl hover:border-white border bg-secondary transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700	focus:ring-white rounded text-white px-4 sm:px-8 py-2 sm:py-3 text-sm">Start as student</button>
+                        <button className="hover:text-white lg:text-xl hover:border-white border bg-gradient-to-r from-secondary to-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary transition duration-500 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700focus:ring-white rounded text-white px-4 sm:px-8 py-2 sm:py-3 text-sm ">Start as student</button>
                     </Link>
                     <Link to='/signup'>
-                        <button className="lg:text-xl border-secondary hover:border-primary ml-3 sm:ml-6 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-primary focus:ring-primary rounded border  px-4 sm:px-8 py-2 sm:py-3 text-sm">Join as Instructor</button>
+                        <button className="lg:text-xl border-secondary hover:border-primary ml-3 sm:ml-6 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-primary focus:ring-primary rounded border px-4 sm:px-8 py-2 sm:py-3 text-sm hover:bg-gradient-to-r from-secondary to-primary hover:text-white">Join as Instructor</button>
                     </Link>
                 </div>
             </div>
