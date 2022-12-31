@@ -2,7 +2,9 @@ import Login from "../components/Authentication/Login/Login";
 import SignUp from "../components/Authentication/SignUp/SignUp";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import About from "../components/pages/About/About";
+import AllInstructors from "../components/pages/Home/Instructors/AllInstructors";
 import InstructorSinglePage from "../components/pages/Home/Instructors/InstructorSinglePage";
+import AllTuitions from "../components/pages/Home/Tuitions/AllTuitions";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Home } = require("../components/pages/Home/Home");
@@ -24,7 +26,11 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/find-tutors',
-                element: <InstructorSinglePage></InstructorSinglePage>
+                element: <AllInstructors></AllInstructors>
+            },
+            {
+                path: '/find-tuitions',
+                element: <AllTuitions></AllTuitions>
             }
         ]
     },

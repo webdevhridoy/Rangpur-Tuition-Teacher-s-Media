@@ -6,7 +6,7 @@ import Header from '../components/shared/Header/Header';
 const Main = () => {
     return (
         <div>
-            <div className='shadow-sm'>
+            <div className='shadow-sm sticky top-0 h-[80px] bg-white z-50 w-full'>
                 <Header></Header>
             </div>
             <Outlet></Outlet>
