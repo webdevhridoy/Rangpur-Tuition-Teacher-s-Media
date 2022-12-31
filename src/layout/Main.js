@@ -10,7 +10,9 @@ const Main = () => {
                 <Header></Header>
             </div>
             <Outlet></Outlet>
-            <Footer></Footer>
+            <div className='bg-primary'>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };

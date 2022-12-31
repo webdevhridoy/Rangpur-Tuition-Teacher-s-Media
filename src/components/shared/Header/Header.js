@@ -10,19 +10,19 @@ const Header = () => {
             <Link className='text-md font-semibold  ' to='/'>Home</Link>
         </li>
         <li>
-            <Link className='text-md font-semibold' to='/'>About Us</Link>
+            <Link className='text-md font-semibold' to='/about'>About Us</Link>
         </li>
         <li>
-            <Link className='text-md font-semibold  ' to='/'>Find Tutors</Link>
+            <Link className='text-md font-semibold  ' to='/find-tutors'>Find Tutors</Link>
         </li>
         <li >
-            <Link className='text-md font-semibold  ' to='/'>Tuitions</Link>
+            <Link className='text-md font-semibold  ' to='/find-tuitions'>Tuitions</Link>
         </li>
         <li >
-            <Link className='text-md font-semibold  ' to='/'>Job Board</Link>
+            <Link className='text-md font-semibold  ' to='/job-portal'>Job Board</Link>
         </li>
         <li>
-            <Link className='text-md font-semibold  ' to='/'>Conact Us</Link>
+            <Link className='text-md font-semibold  ' to='/contact-us'>Conact Us</Link>
         </li>
     </>;
     return (
@@ -46,7 +46,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end ">
-                <Link to='/login' className=" rounded duration-700 ease-linear btn md:btn-md btn-sm bg-gradient-to-r from-secondary to-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary">Get started</Link>
+                <Link to='/login' className="text-white rounded duration-700 ease-linear btn md:btn-md btn-sm bg-gradient-to-r from-secondary to-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary">Get started</Link>
             </div>
         </div>
     );
