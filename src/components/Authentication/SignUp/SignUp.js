@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
@@ -6,7 +6,7 @@ import loginImage from '../../../assest/login.png';
 
 const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const [loginError, setLoginError] = useState('');
+    // const [loginError, setLoginError] = useState('');
 
     const handleLogin = () => {
         console.log('Sei mama');
@@ -112,9 +112,9 @@ const SignUp = () => {
                                 <Link className='text-base text-gray-500 hover:underline'>Lost password?</Link>
                             </div>
                         </form>
-                        <div>
+                        {/* <div>
                             {loginError && <p className='text-red-600'> {loginError}</p>}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

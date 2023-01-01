@@ -2,8 +2,8 @@ import Login from "../components/Authentication/Login/Login";
 import SignUp from "../components/Authentication/SignUp/SignUp";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import About from "../components/pages/About/About";
+import InstructorsDashboard from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InstructorsDashboard";
 import AllInstructors from "../components/pages/Home/Instructors/AllInstructors";
-import InstructorSinglePage from "../components/pages/Home/Instructors/InstructorSinglePage";
 import AllTuitions from "../components/pages/Home/Tuitions/AllTuitions";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -31,7 +31,11 @@ export const routes = createBrowserRouter([
             {
                 path: '/find-tuitions',
                 element: <AllTuitions></AllTuitions>
-            }
+            },
+            {
+                path: '/instructors-dashboard',
+                element: <InstructorsDashboard></InstructorsDashboard>
+            },
         ]
     },
     {

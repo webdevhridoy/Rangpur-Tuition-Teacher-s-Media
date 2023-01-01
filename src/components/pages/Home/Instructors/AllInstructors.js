@@ -17,6 +17,7 @@ import { BsArrowRight } from "react-icons/bs";
 const AllInstructors = () => {
     return (
         <div className="flex flex-col md:flex-row justify-between gap-5 w-11/12 mx-auto p-5 md:p-10">
+            {/* for mobile device */}
             <div className="w-full md:w-1/5 block lg:hidden">
                 <div className="border px-3">
                     <a
