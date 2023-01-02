@@ -2,7 +2,13 @@ import Login from "../components/Authentication/Login/Login";
 import SignUp from "../components/Authentication/SignUp/SignUp";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import About from "../components/pages/About/About";
-import InstructorsDashboard from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InstructorsDashboard";
+import InsCoursesReviews from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InsCoursesReviews";
+import InsReferral from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InsReferral";
+import InstructorsCourses from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InstructorsCourses";
+import InstructorsDashboardRight from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InstructorsDashboardRight";
+import InstructorsReviews from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InstructorsReviews";
+import MyTuitions from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/MyTuitions";
+import DashboardLayout from "../components/pages/Dashboard/DashboardLayout";
 import AllInstructors from "../components/pages/Home/Instructors/AllInstructors";
 import AllTuitions from "../components/pages/Home/Tuitions/AllTuitions";
 
@@ -34,7 +40,33 @@ export const routes = createBrowserRouter([
             },
             {
                 path: '/instructors-dashboard',
-                element: <InstructorsDashboard></InstructorsDashboard>
+                element: <DashboardLayout></DashboardLayout>,
+                children: [
+                    {
+                        path: '/instructors-dashboard',
+                        element: <InstructorsDashboardRight></InstructorsDashboardRight>
+                    },
+                    {
+                        path: '/instructors-dashboard/my-tuitions',
+                        element: <MyTuitions></MyTuitions>
+                    },
+                    {
+                        path: '/instructors-dashboard/instructors-reviews',
+                        element: <InstructorsReviews></InstructorsReviews>
+                    },
+                    {
+                        path: '/instructors-dashboard/my-courses',
+                        element: <InstructorsCourses></InstructorsCourses>
+                    },
+                    {
+                        path: '/instructors-dashboard/courses-reviews',
+                        element: <InsCoursesReviews></InsCoursesReviews>
+                    },
+                    {
+                        path: '/instructors-dashboard/referral',
+                        element: <InsReferral></InsReferral>
+                    },
+                ]
             },
         ]
     },
