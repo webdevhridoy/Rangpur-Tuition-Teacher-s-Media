@@ -9,8 +9,9 @@ import InstructorsDashboardRight from "../components/pages/Dashboard/DasboardLay
 import InstructorsReviews from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/InstructorsReviews";
 import MyTuitions from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/MyTuitions";
 import DashboardLayout from "../components/pages/Dashboard/DashboardLayout";
-import AllInstructors from "../components/pages/Home/Instructors/AllInstructors";
 import AllTuitions from "../components/pages/Home/Tuitions/AllTuitions";
+import AllInstructors from "../components/pages/Instructors/AllInstructors";
+import InstructorsDetails from "../components/pages/Instructors/InstructorsDetails";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Home } = require("../components/pages/Home/Home");
@@ -33,6 +34,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/find-tutors',
                 element: <AllInstructors></AllInstructors>
+            },
+            {
+                path: '/instructors-details',
+                element: <InstructorsDetails></InstructorsDetails>
             },
             {
                 path: '/find-tuitions',

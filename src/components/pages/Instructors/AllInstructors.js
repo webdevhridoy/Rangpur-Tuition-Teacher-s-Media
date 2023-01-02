@@ -1,5 +1,5 @@
 import React from 'react';
-import instructorImage from '../../../../assest/instructos/instructors_image.png';
+import instructorImage from '../../../assest/instructos/instructors_image.png';
 import { AiFillStar } from 'react-icons/ai';
 import {
     BsCheckCircleFill,

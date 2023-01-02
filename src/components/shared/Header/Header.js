@@ -22,7 +22,7 @@ const Header = () => {
             <Link className='text-md font-semibold  ' to='/job-portal'>Job Board</Link>
         </li>
         <li >
-            <Link className='text-md font-semibold  ' to='/instructors-dashboard'>Instructors Dashboard</Link>
+            <Link className='text-md font-semibold  ' to='/instructors-dashboard'>Ins Dashboard</Link>
         </li>
         <li>
             <Link className='text-md font-semibold  ' to='/contact-us'>Conact Us</Link>
