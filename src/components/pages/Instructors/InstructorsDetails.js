@@ -14,6 +14,7 @@ import { TfiWorld } from 'react-icons/tfi';
 import { Link } from 'react-router-dom';
 import { AiOutlineHeart } from 'react-icons/ai';
 import { FaUniversity, FaRegCalendarAlt } from "react-icons/fa";
+import rightBanner from '../../../assest/instructos/right-side-banner.png';
 
 
 const InstructorsDetails = () => {
@@ -250,7 +251,7 @@ const InstructorsDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full md:w-1/5 sticky h-screen top-0 right-0">
+                <div className="w-full md:w-1/5">
                     <div className='border bg-white py-2 rounded text-center px-5 mb-5'>
                         <p className="text-gray-500 text-base italic">
                             If you think your teacher is tough, wait till you get a boss. <br />
@@ -259,10 +260,10 @@ const InstructorsDetails = () => {
                     </div>
                     <div className='border bg-white py-2 rounded text-start px-5 mb-5'>
                         <h2 className='text-lg font-bold capitalize text-primary pb-2'>Profile Overview</h2>
-                        <h2 className='text-sm font-semibold capitalize text-primary pb-2'>- Total Tuitions (12)</h2>
-                        <h2 className='text-sm font-semibold capitalize text-primary pb-2'>- Year of experience (2) years</h2>
-                        <h2 className='text-sm font-semibold capitalize text-primary pb-2'>- Total student (50)</h2>
-                        <h2 className='text-sm font-semibold capitalize text-primary pb-2'>- Total Reviews (150)</h2>
+                        <h2 className='text-sm font-semibold capitalize text-gray-600 pb-2'>- Total Tuitions (12)</h2>
+                        <h2 className='text-sm font-semibold capitalize text-gray-600 pb-2'>- Year of experience (2) years</h2>
+                        <h2 className='text-sm font-semibold capitalize text-gray-600 pb-2'>- Total student (50)</h2>
+                        <h2 className='text-sm font-semibold capitalize text-gray-600 pb-2'>- Total Reviews (150)</h2>
                     </div>
                     <div className='border bg-white py-2 rounded text-start px-5 mb-5'>
                         <h2 className='text-lg font-bold capitalize text-primary pb-2'>Contact Details</h2>
@@ -281,6 +282,9 @@ const InstructorsDetails = () => {
                             </Link>
                         </div>
 
+                    </div>
+                    <div className='border bg-white py-2 rounded text-start px-5 mb-5'>
+                        <img src={rightBanner} alt="" />
                     </div>
                 </div>
             </div>
