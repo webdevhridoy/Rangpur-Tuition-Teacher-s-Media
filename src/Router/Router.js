@@ -10,8 +10,10 @@ import InstructorsReviews from "../components/pages/Dashboard/DasboardLayout/Ins
 import MyTuitions from "../components/pages/Dashboard/DasboardLayout/InstructorsDashboard/MyTuitions";
 import DashboardLayout from "../components/pages/Dashboard/DashboardLayout";
 import AllTuitions from "../components/pages/Home/Tuitions/AllTuitions";
+import TuitionsDetails from "../components/pages/Home/Tuitions/TuitionsDetails";
 import AllInstructors from "../components/pages/Instructors/AllInstructors";
 import InstructorsDetails from "../components/pages/Instructors/InstructorsDetails";
+import PrivateRouter from "../components/PrivateRouter/PrivateRouter";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Home } = require("../components/pages/Home/Home");
@@ -40,12 +42,16 @@ export const routes = createBrowserRouter([
                 element: <InstructorsDetails></InstructorsDetails>
             },
             {
+                path: '/tuition-details',
+                element: <TuitionsDetails></TuitionsDetails>
+            },
+            {
                 path: '/find-tuitions',
                 element: <AllTuitions></AllTuitions>
             },
             {
                 path: '/instructors-dashboard',
-                element: <DashboardLayout></DashboardLayout>,
+                element: <PrivateRouter><DashboardLayout></DashboardLayout></PrivateRouter>,
                 children: [
                     {
                         path: '/instructors-dashboard',

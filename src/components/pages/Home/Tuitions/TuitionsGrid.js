@@ -143,9 +143,9 @@ const TuitionsGrid = () => {
                                 </span>
                                 <span className='-mt-1 text-xl'>Save</span>
                             </Link>
-                            <div>
+                            <Link to='/tuition-details'>
                                 <button className='text-white px-10 py-2 bg-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary rounded mr-2'>View Details</button>
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

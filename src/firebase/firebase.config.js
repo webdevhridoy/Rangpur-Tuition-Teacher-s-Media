@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyC3mJZ08LS_7rctsRwKSN4z9ZTDaJbBsjo",
-    authDomain: "rttm-6e786.firebaseapp.com",
-    projectId: "rttm-6e786",
-    storageBucket: "rttm-6e786.appspot.com",
-    messagingSenderId: "683627586095",
-    appId: "1:683627586095:web:fec112f0720f42dd129cda"
+    apiKey: "AIzaSyDTZjK-Z_YiaZace5NwpnZBnmBCFg4rxIc",
+    authDomain: "rangpur-tuition-teacher-media.firebaseapp.com",
+    projectId: "rangpur-tuition-teacher-media",
+    storageBucket: "rangpur-tuition-teacher-media.appspot.com",
+    messagingSenderId: "284618694876",
+    appId: "1:284618694876:web:b4f27ba2af8398933bd419"
 };
 
 // Initialize Firebase

@@ -333,7 +333,7 @@ const InstructorsDetails = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

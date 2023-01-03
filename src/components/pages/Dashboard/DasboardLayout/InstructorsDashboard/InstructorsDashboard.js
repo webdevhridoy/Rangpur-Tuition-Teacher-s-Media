@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import InsUser from '../../../../../assest/instructos/user15.jpg';
 import { BsHouseDoor } from "react-icons/bs";
 import { HiOutlineUserGroup, HiOutlineStar, HiOutlineUserAdd } from "react-icons/hi";
 import { AiOutlineLogout } from "react-icons/ai";
 import { BsBook } from "react-icons/bs";
+import { authContext } from '../../../../../Context/AuthProvider';
 
 const InstructorsDashboard = () => {
+    const { user, logOut } = useContext(authContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .then(error => console.error(error));
+    };
 
     const dashboardItems = <>
         <li className='text-lg text-start my-2 py-2 hover:bg-primary hover:opacity-90 hover:text-white hover:border-l-10 hover:ml-2 hover:pl-1 duration-700 ease-in-out hover:rounded flex items-center'>
@@ -35,7 +43,7 @@ const InstructorsDashboard = () => {
         </li>
         <li className='text-lg text-start my-2 py-2 hover:bg-primary hover:opacity-90 hover:text-white hover:border-l-10 hover:ml-2 hover:pl-1 duration-700 ease-in-out hover:rounded flex items-center'>
             <span className='mr-2'> <AiOutlineLogout></AiOutlineLogout></span>
-            <Link to='/signout'>Sign Out</Link>
+            <Link onClick={handleLogOut}>Sign Out</Link>
         </li>
     </>;
 
