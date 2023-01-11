@@ -8,7 +8,7 @@ import { BsBook } from "react-icons/bs";
 import { authContext } from '../../../../../Context/AuthProvider';
 
 const InstructorsDashboard = () => {
-    const { user, logOut } = useContext(authContext);
+    const { logOut } = useContext(authContext);
 
     const handleLogOut = () => {
         logOut()

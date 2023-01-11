@@ -2,20 +2,22 @@ import React, { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import loginImage from '../../../assest/login.png';
 import { authContext } from '../../../Context/AuthProvider';
 
 const SignUp = () => {
     const { register, formState: { errors }, handleSubmit } = useForm();
-    const { user, googleProviderLogin, createUser, updateUser } = useContext(authContext);
+    const { verifyEmail, googleProviderLogin, createUser, updateUser } = useContext(authContext);
     // const [loginError, setLoginError] = useState('');
 
+    //login 
     const handleLogin = (data) => {
         createUser(data.email, data.password)
             .then(result => {
                 const user = result.user;
                 console.log(user);
-
+                verifyEmailAddress();
                 const profile = {
                     displayName: data.name
                 };
@@ -29,6 +31,21 @@ const SignUp = () => {
                     status: 'unverified'
                 };
                 console.log(usersInfo);
+
+                fetch('http://localhost:5000/users', {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json'
+                    },
+                    body: JSON.stringify(usersInfo)
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        Swal.fire({
+                            text: 'Registration Successful'
+                        });
+                    });
             })
 
             .catch(error => {
@@ -45,6 +62,12 @@ const SignUp = () => {
             .catch(error => {
                 console.error(error);
             });
+    };
+
+    const verifyEmailAddress = () => {
+        verifyEmail()
+            .then(result => { })
+            .catch(error => console.log(error));
     };
     return (
         <div className='flex justify-center md:flex-row flex-col items-center md:h-screen'>

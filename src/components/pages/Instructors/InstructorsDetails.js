@@ -244,47 +244,47 @@ const InstructorsDetails = () => {
                                                     <h2 className='text-xl font-bold capitalize'>Reviews - (15)</h2>
                                                     <div className='pb-2'>
                                                         <div
-                                                            class="flex justify-start items-center pt-5"
+                                                            className="flex justify-start items-center pt-5"
                                                         >
                                                             <img
                                                                 src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
-                                                                class="rounded-full shadow-md w-20"
+                                                                className="rounded-full shadow-md w-20"
                                                                 alt="woman avatar"
                                                             />
                                                             <div className='pl-5'>
-                                                                <p class="font-semibold text-xl text-gray-800">Anna Smith</p>
-                                                                <p class="font-normal text-gray-500 mb-0 text-base">Rating - 5.0</p>
+                                                                <p className="font-semibold text-xl text-gray-800">Anna Smith</p>
+                                                                <p className="font-normal text-gray-500 mb-0 text-base">Rating - 5.0</p>
                                                             </div>
                                                         </div>
                                                         <div className='py-3'>
-                                                            <p class="text-gray-500 font-light">
+                                                            <p className="text-gray-500 font-light">
                                                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
                                                                 molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti
                                                                 magnam.
                                                             </p>
-                                                            <p class="font-semibold text-gray-500 mt-2">Published 3 weeks ago</p>
+                                                            <p className="font-semibold text-gray-500 mt-2">Published 3 weeks ago</p>
                                                         </div>
                                                         <hr />
                                                         <div
-                                                            class="flex justify-start items-center pt-5"
+                                                            className="flex justify-start items-center pt-5"
                                                         >
                                                             <img
                                                                 src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg"
-                                                                class="rounded-full shadow-md w-20"
+                                                                className="rounded-full shadow-md w-20"
                                                                 alt="woman avatar"
                                                             />
                                                             <div className='pl-5'>
-                                                                <p class="font-semibold text-xl text-gray-800">Anna Smith</p>
-                                                                <p class="font-normal text-gray-500 mb-0 text-base">Rating - 5.0</p>
+                                                                <p className="font-semibold text-xl text-gray-800">Anna Smith</p>
+                                                                <p className="font-normal text-gray-500 mb-0 text-base">Rating - 5.0</p>
                                                             </div>
                                                         </div>
                                                         <div className='py-3'>
-                                                            <p class="text-gray-500 font-light">
+                                                            <p className="text-gray-500 font-light">
                                                                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente
                                                                 molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti
                                                                 magnam.
                                                             </p>
-                                                            <p class="font-semibold text-gray-500 mt-2">Published 3 weeks ago</p>
+                                                            <p className="font-semibold text-gray-500 mt-2">Published 3 weeks ago</p>
                                                         </div>
                                                     </div>
                                                 </div>
